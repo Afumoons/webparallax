@@ -1,0 +1,147 @@
+.navbar {
+    position: sticky;
+    @include flex-row;
+    justify-content: space-around;
+    top: 0;
+    height: 8vh;
+    // min-height: 8vh;
+    background-color: color(satu-dark);
+    transition: $transition;
+    z-index: 2;
+    // overflow-x: hidden;
+
+    &_logo {
+        color: color(satu-light);
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: .1125rem;
+        font-size: .6rem;
+        position: relative;
+        transition: $transition-slow;
+        transform: translateX(-5em);
+        pointer-events: none;
+    }
+
+    &_logo_scroll {
+        letter-spacing: .3125rem;
+        font-size: 1.25rem;
+        color: color(white);
+        transform: translateX(0em);
+        pointer-events: all;
+    }
+
+    &_nav-links {
+        @include flex-column;
+        justify-content: space-around;
+        position: absolute;
+        height: 92vh;
+        right: 0;
+        top: 8vh;
+        background-color: color(satu);
+        width: 30%;
+        opacity: 0;
+        transform: translateX(30%);
+        transition: $transition-fast;
+        list-style: none;
+
+        @include tablet {
+            @include flex-row;
+            justify-content: space-around;
+            height: auto;
+            position: relative;
+            right: auto;
+            top: auto;
+            background-color: rgba(color(satu), 0);
+            width: 60%;
+            pointer-events: none;
+            transform: translateX(0);
+        }
+
+        @include pc {
+            width: 40%;
+            transition: $transition-slower;
+        }
+
+        li {
+            opacity: 0;
+
+            @include tablet {
+                opacity: 1;
+            }
+
+            a {
+                color: color(white);
+                text-decoration: none;
+                letter-spacing: 3.2px;
+                letter-spacing: .2rem;
+                font-weight: 700;
+                font-size: 14px;
+                font-size: .875rem;
+                transition: $transition;
+
+                &:hover {
+                    text-shadow: 1px 0 1em darken(color(satu-darkest), 20%);
+                }
+            }
+        }
+    }
+
+    &_nav-links_scroll {
+        opacity: 0;
+        pointer-events: all;
+
+        @include tablet {
+            opacity: 1;
+        }
+    }
+
+    &_nav-links-active {
+
+        // @include pc {
+        opacity: 1;
+        transform: translateX(0);
+        // }
+    }
+
+    &_burger {
+        opacity: 0;
+        display: block;
+        cursor: pointer;
+        transition: $transition-slower;
+
+        @include tablet {
+            display: none;
+            pointer-events: none;
+        }
+
+        div {
+            width: 1.5625em;
+            height: .1875em;
+            background-color: white;
+            margin: .3125em;
+            transition: $transition;
+        }
+    }
+
+    &_burger_scroll {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    &_toggle-burger .line1 {
+        animation: line1animation .5s forwards ease-out;
+    }
+
+    &_toggle-burger .line2 {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    &_toggle-burger .line3 {
+        animation: line3animation 1s forwards cubic-bezier(.77, 0, .175, 1)
+    }
+}
+
+.navbar_scroll {
+    background-color: color(satu);
+}

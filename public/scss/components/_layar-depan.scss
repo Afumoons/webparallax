@@ -1,0 +1,30 @@
+.layar-depan {
+    padding: 1em;
+    height: 92vh;
+    background-color: color(satu);
+    background-image: linear-gradient(color(satu), color(satu-dark));
+    transition: .6s ease;
+    pointer-events: none;
+    // position: relative;
+    @include flex-column;
+
+    &_text {
+        color: color(white);
+
+
+        span.animate {
+            margin: 0px 2px;
+            opacity: 0;
+            min-width: 9.250px;
+            transition: 0.3s ease;
+            display: inline-block;
+            transform: translateY(50px);
+        }
+
+
+        span.fade {
+            opacity: 1;
+            transform: translateY(10px);
+        }
+    }
+}

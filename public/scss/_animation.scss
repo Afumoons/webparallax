@@ -1,0 +1,125 @@
+  @-webkit-keyframes line1animation {
+      0% {
+          -webkit-transform: rotate(0deg) translate(0, 0);
+          transform: rotate(0deg) translate(0, 0)
+      }
+
+      100% {
+          -webkit-transform: rotate(-405deg) translate(-5px, 6px);
+          transform: rotate(-405deg) translate(-5px, 6px)
+      }
+  }
+
+  @keyframes line1animation {
+      0% {
+          -webkit-transform: rotate(0deg) translate(0, 0);
+          transform: rotate(0deg) translate(0, 0)
+      }
+
+      100% {
+          -webkit-transform: rotate(-405deg) translate(-5px, 6px);
+          transform: rotate(-405deg) translate(-5px, 6px)
+      }
+  }
+
+  @-webkit-keyframes line3animation {
+      0% {
+          width: 25px
+      }
+
+      30% {
+          width: 5px;
+          -webkit-transform: rotate(20deg) translateX(50px);
+          transform: rotate(20deg) translateX(50px)
+      }
+
+      100% {
+          width: 25px;
+          -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px)
+      }
+  }
+
+  @keyframes line3animation {
+      0% {
+          width: 25px
+      }
+
+      30% {
+          width: 5px;
+          -webkit-transform: rotate(20deg) translateX(50px);
+          transform: rotate(20deg) translateX(50px)
+      }
+
+      100% {
+          width: 25px;
+          -webkit-transform: rotate(45deg) translate(-5px, -6px);
+          transform: rotate(45deg) translate(-5px, -6px)
+      }
+  }
+
+  @-webkit-keyframes navLinkFade {
+      from {
+          opacity: 0;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          -webkit-transform: translateX(50px);
+          transform: translateX(50px)
+      }
+
+      to {
+          opacity: 1;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+          -webkit-transform: translateX(0);
+          transform: translateX(0)
+      }
+  }
+
+  @keyframes navLinkFade {
+      from {
+          opacity: 0;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+          -webkit-transform: translateX(50px);
+          transform: translateX(50px)
+      }
+
+      to {
+          opacity: 1;
+          -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+          -webkit-transform: translateX(0);
+          transform: translateX(0)
+      }
+  }
+
+  @-webkit-keyframes sk-rotatePlane {
+      0% {
+          -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+          transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      }
+
+      50% {
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      }
+
+      100% {
+          -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+          transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      }
+  }
+
+  @keyframes sk-rotatePlane {
+      0% {
+          -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+          transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      }
+
+      50% {
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      }
+
+      100% {
+          -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+          transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      }
+  }

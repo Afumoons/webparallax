@@ -1,0 +1,56 @@
+$colors: (
+    /*Default*/
+    white:lighten(#ff9933, 35%), black:darken(#ff9933, 50%),
+    /*Warna satu*/
+    satu:#ff9933, satu-light:lighten(#ff9933, 10%), satu-lighter:lighten(#ff9933, 20%), satu-lightest:lighten(#ff9933, 30%), satu-shine:lighten(#ff9933, 40%), satu-dark:darken(#ff9933, 10%), satu-darker:darken(#ff9933, 20%), satu-darkest:darken(#ff9933, 30%),
+    /*Warna Dua*/
+    dua:#5D382E, dua-light:lighten(#5D382E, 10%), dua-lighter:lighten(#5D382E, 20%), dua-lightest:lighten(#5D382E, 30%), dua-dark:darken(#5D382E, 10%), dua-darker:darken(#5D382E, 20%), dua-darkest:darken(#5D382E, 30%),
+    /*Grey*/
+    grey:#B0A8B9, grey-light:lighten(#B0A8B9, 10%), grey-lighter:lighten(#B0A8B9, 20%), grey-lightest:lighten(#B0A8B9, 40%), grey-lightestt:lighten(#B0A8B9, 70%), grey-dark:darken(#B0A8B9, 10%), grey-darker:darken(#B0A8B9, 20%), grey-darkest:darken(#B0A8B9, 40%), grey-darkestt:darken(#B0A8B9, 70%),
+    /*Danger*/
+    danger:#D0120F, danger-light:lighten(#D0120F, 10%), danger-lighter:lighten(#D0120F, 20%), danger-lightest:lighten(#D0120F, 30%),
+    /*Alert*/
+    alert:#FFC451, alert-light:lighten(#FFC451, 10%), alert-lighter:lighten(#FFC451, 20%), alert-lightest:lighten(#FFC451, 30%), );
+/*Media Breakpoints*/
+$pc:950px;
+$tablet:440px;
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+/*Transisi*/
+$transition:350ms ease-in-out;
+$transition-fast: 200ms ease-in-out;
+$transition-slow: 500ms ease-in-out;
+$transition-slower: 1500ms ease-in-out;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    // background: #ffffff;
+    // font-family: "Poppins",
+    // sans-serif;
+    // font-style: normal;
+    // font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fluid {
+    width: 100%;
+    height: 100%;
+}
+
+.transparent {
+    opacity: 0;
+    transition: $transition;
+
+    &:hover {
+        opacity: 1;
+    }
+}
